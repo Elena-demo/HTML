@@ -90,9 +90,25 @@ ul {
   color: #1c1c1c;
 }
 
-.nav-header-item.is-active .nav-header-link {
+.nav-header-link:hover {
   color: #3172b9;
 }
+
+.is-active {
+  border-bottom: 3px solid red;
+}
+
+.down {
+  background-image: url("../image/Arrow-down.png");
+  background-size: 13px 8px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 20px;
+}
+
+/* .nav-header-item.is-active .nav-header-link {
+  color: #3172b9;
+} */
 
 .btn {
   display: inline-block;
@@ -212,6 +228,8 @@ ul {
   display: flex;
 }
 
+/* space-between */
+
 .section-do-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -224,6 +242,22 @@ ul {
   border-radius: 5px;
   padding: 60px 30px 65px 30px;
   text-align: center;
+}
+
+.section-do-item:hover {
+  background-color: #3172b9;
+}
+
+.section-do-item:hover .hover {
+  color: white;
+}
+
+/* .section-do-item:hover .iconn {
+  fill: white;
+} */
+
+.section-do-item:hover .icon path {
+  fill: white;
 }
 
 .section-do-item-heading {
